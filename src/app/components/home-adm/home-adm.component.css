@@ -1,0 +1,103 @@
+table {
+    width: 100%;
+  }
+
+  .container{
+    padding: 50px 80px;
+  }
+  .btn-2 {
+    border: none; 
+    width: 50px;
+  }
+  .btn-2:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-2:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+                inset -4px -4px 6px 0 rgba(255,255,255,.2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  background-color: #ffffff;
+  color:#000000}
+  button {
+    margin: 5px;
+  }
+  .button-btn {
+    width:auto;
+    height: auto;
+    color:#ffffff;
+    border-radius: 50px 50px;
+    padding: 10px 40px;
+    font-family: 'Bebas Neue', 'sans-seri';
+    font-size: 15PX;
+    background: #7F00FF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    
+  }
+
+  ::ng-deep .mat-header-cell{
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    color: #7F00FF;
+    background-color: #7F00FF;
+  }
+/*BOTÃO DELETAR*/
+  .btn-2 {
+    border: none;  
+  }
+  .btn-2:before {
+    height: 0%;
+    width: 1.5px;
+  }
+  .btn-2:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+                inset -4px -4px 6px 0 rgba(255,255,255,.2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  background-color: #ffffff;
+  color:#FF4501}
+  button {
+    margin: 5px;
+  }
+  .deletar-btn {
+    width:auto;
+    height: auto;
+    color:#ffffff;
+    border-radius: 50px 50px;
+    padding: 10px 40px;
+    font-family: 'Bebas Neue', 'sans-seri';
+    font-size: 15px;
+    background: #FF4501;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    
+  }
+  .ng-confirm {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .ng-confirm__button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }

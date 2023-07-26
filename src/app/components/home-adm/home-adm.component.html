@@ -1,0 +1,48 @@
+
+<div class="container " >
+    <button class="button-btn btn-2" (click)="openDialog(null)"data-target="#exampleModalCenter"><i class="fa-solid fa-pen-to-square" ></i></button>
+    
+
+    <table #table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+   
+
+      <ng-container matColumnDef="codigosicap">
+        <th mat-header-cell *matHeaderCellDef> Código Sicap</th>
+        <td mat-cell *matCellDef="let element"> {{element.CodigoSicap}} </td>
+      </ng-container>
+    
+      <!-- Name Column -->
+      <ng-container matColumnDef="nome">
+        <th mat-header-cell *matHeaderCellDef> Nome </th>
+        <td mat-cell *matCellDef="let element"> {{element.Nome}} </td>
+      </ng-container>
+    
+      <!-- Weight Column -->
+      <ng-container matColumnDef="praca">
+        <th mat-header-cell *matHeaderCellDef> Praça </th>
+        <td mat-cell *matCellDef="let element"> {{element.Praca}} </td>
+      </ng-container>
+    
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="pais">
+        <th mat-header-cell *matHeaderCellDef> Pais </th>
+        <td mat-cell *matCellDef="let element"> {{element.Pais}} </td>
+      </ng-container>
+
+    <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center;"> Ações </th>
+        <td mat-cell *matCellDef="let element" style="text-align: center;">
+          <button class="button-btn btn-2" (click)="openDetails()" color="warn"><i class="fa fa-eye"
+            aria-hidden="true"></i></button>
+            <button class="button-btn btn-2" (click)="editElement(element)"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="deletar-btn btn-2" (click)="deleteElement(element.position)"><i class="fa-solid fa-trash"></i></button>
+            
+        </td>
+      </ng-container>
+    
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+</div>

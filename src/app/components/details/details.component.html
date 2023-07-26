@@ -1,0 +1,64 @@
+<div class="container">
+  <h1 mat-dialog-title style=" justify-content: center; margin-left: 9rem; font-size: x-large; color: #ffffff; font-family: 'Bebas Neue', sans-serif;"> Detalhes</h1>
+  <div mat-dialog-content style=" justify-content: center; font-size: x-large; color: #ffffff; font-family: 'Bebas Neue', sans-serif; width: 25rem;">
+
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label>Código Sicap</mat-label>
+            <input  [(ngModel)]="element.CodigoSicap">
+          </mat-form-field >   
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label>Nome</mat-label>
+            <input  [(ngModel)]="element.Nome">
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label>Praça</mat-label>
+            <input  [(ngModel)]="element.Praca">
+          </mat-form-field>
+        </div>
+        <div class="column">
+          <mat-form-field appearance="fill">
+            <mat-label >Pais</mat-label>
+            <input color="" matInput [(ngModel)]="element.Pais">
+          </mat-form-field>
+        </div>
+      </div>
+</div>
+    
+      <!-- formulario -->
+
+<!-- <h1 mat-dialog-title>Detalhes</h1>
+
+<div mat-dialog-content style=" justify-content: center; font-size: x-large; color: #ffffff; font-family: 'Bebas Neue', sans-serif; width: 55rem;">
+  <div class="column">
+  <mat-form-field appearance="fill">
+    <mat-label>Position</mat-label>
+    <input matInput [(ngModel)]="element.position">
+  </mat-form-field >
+</div>
+<div class="column">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="element.name">
+  </mat-form-field>
+</div>
+<div class="column">
+  <mat-form-field>
+    <mat-label>Weight</mat-label>
+    <input matInput [(ngModel)]="element.weight">
+  </mat-form-field>
+</div>
+  <mat-form-field appearance="outline">
+    <mat-label >Symbol</mat-label>
+    <input color="" matInput [(ngModel)]="element.symbol">
+  </mat-form-field>
+  <div mat-dialog-actions>
+    <button class="cancelar-btn btn-2"  mat-button (click)="close()"><i class="fa-solid fa-xmark"></i></button>
+    
+  
+  </div>
+</div> -->
